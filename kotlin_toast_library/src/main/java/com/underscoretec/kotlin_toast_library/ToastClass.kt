@@ -6,11 +6,15 @@ import androidx.appcompat.app.AppCompatActivity
 
 class ToastClass :AppCompatActivity(){
 
-    fun s(c:Context,msg : String){
+    companion object {
+        @JvmStatic
 
-        val myToast = Toast.makeText(c,msg,Toast.LENGTH_SHORT)
-        myToast.show()
+        fun s(c: Context, msg: String) {
 
+            val myToast = Toast.makeText(c, msg, Toast.LENGTH_SHORT)
+            myToast.show()
+
+        }
     }
 
 }
